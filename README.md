@@ -34,7 +34,18 @@
 *   **Spring Data JPA** & **Hibernate**
 *   **H2 Database** (In-memory, automatically recreated on startup)
 *   **OpenAPI/Swagger** (Available for API documentation)
+  
+## ⏱️ Effort Estimation
+This section provides a rough breakdown of the time invested in developing the core components of the project. These estimates reflect the effort to build a maintainable, full-stack application from scratch.
 
+| Phase | Time Spent |
+| :--- | :--- |
+| **DB & Schema Design** | 2h |
+| **API & Auth (Security/OAuth2)** | 6h |
+| **Frontend Development** | 8h |
+| **Packaging & Documentation** | 1.5h |
+| **Testing & Bug Fixing** | 2h |
+| **Total** | **19.5h** |
 ---
 
 ## 🚀 Quick Start (One-Command Run)
@@ -49,14 +60,4 @@ cd dev
 ./start.sh
 3. Open in BrowserWeb UI: http://localhost:5173Backend API: http://localhost:8080👥 Seeded Test DataTo make testing effortless, the DataSeeder automatically populates the database on startup. You do not need to register a new account.Use the following pre-configured credentials to explore the app:RoleEmailPasswordDetailsADMINadmin@timeflow.comadmin123Full access to the Admin Panel and global database CSV exports.USERjohn@timeflow.comuser123Standard employee account. Pre-filled with realistic work data for the previous month.USERjane@timeflow.comuser123Standard employee account. Pre-filled with realistic work data for the previous month.🔒 Security & EnvironmentNo Hardcoded Secrets: All sensitive credentials (such as Google OAuth Client IDs and Mail server passwords) are kept out of version control.Environment Variables: A .env.example file is provided in the root directory. In a production environment, you would rename this to .env and provide real credentials.Data Reset: Because the application utilizes an H2 In-Memory database (spring.jpa.hibernate.ddl-auto=create-drop), all data is completely wiped and re-seeded cleanly every time the backend restarts.🏗️ Architecture NotesThis project embraces a lightweight approach. Instead of relying on heavy component libraries (like Material UI or Tailwind), the frontend relies on raw CSS to maintain absolute control over the frosted-glass aesthetic. The backend is designed with domain-driven principles, keeping TimeEntry, Attendance, and User entities strictly decoupled yet easily queried via Spring Data JPA.
 
-## ⏱️ Effort Estimation
-This section provides a rough breakdown of the time invested in developing the core components of the project. These estimates reflect the effort to build a maintainable, full-stack application from scratch.
 
-| Phase | Time Spent |
-| :--- | :--- |
-| **DB & Schema Design** | 2h |
-| **API & Auth (Security/OAuth2)** | 6h |
-| **Frontend Development** | 8h |
-| **Packaging & Documentation** | 1.5h |
-| **Testing & Bug Fixing** | 2h |
-| **Total** | **19.5h** |
