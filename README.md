@@ -46,6 +46,15 @@ This section provides a rough breakdown of the time invested in developing the c
 | **Packaging & Documentation** | 1.5h |
 | **Testing & Bug Fixing** | 2h |
 | **Total** | **19.5h** |
+
+## 📞 Contact Information
+Feel free to reach out for collaboration, job opportunities, or code reviews.
+
+*   **Email:** [alien.bed123456789@gmail.com](mailto:alien.bed123456789@gmail.com)
+*   **Phone:** (+420) 774 545-738
+*   **Location:** Moravská-Ostrava, 70200, Czech Republic
+*   **LinkedIn:** [Aleksandr Diakonov](https://www.linkedin.com/in/aleksandr-diakonov-199382380)
+*   **GitHub:** [github.com/Sasha21278](https://github.com/alienbed123456789-jpg)
 ---
 
 ## 🚀 Quick Start (One-Command Run)
