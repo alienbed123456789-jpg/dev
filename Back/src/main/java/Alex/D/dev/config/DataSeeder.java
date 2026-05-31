@@ -26,7 +26,13 @@ public class DataSeeder {
             TimeEntryRepository timeEntryRepository,
             BCryptPasswordEncoder passwordEncoder) {
 
+
         return args -> {
+
+if (userRepository.count() > 0) {
+                System.out.println("already fill");
+                return;
+            }
             User admin = new User();
             admin.setEmail("admin@timeflow.com");
             admin.setPassword(passwordEncoder.encode("admin123"));
